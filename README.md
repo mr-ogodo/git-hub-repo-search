@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with the GitHub Repo app.
 
 This project was Created by Ogodo Seun, bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
