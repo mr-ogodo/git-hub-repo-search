@@ -1,0 +1,99 @@
+.results-page {
+  max-width: 1600px;
+  margin: 0 10%;
+  position: relative;
+  text-align: left;
+}
+
+.results-page__entry {
+  border: 1px solid lightgrey;
+  list-style: none;
+  padding: 30px;
+}
+
+.results-page__entry:hover {
+  border-left: 6px solid brown;
+  background-color: lightgray;
+}
+
+.results-page__entry > :first-child {
+  width: 15%;
+}
+
+.results-page__entry > :not(:first-child) {
+  margin-left: 30px;
+}
+
+.results-page__entry:not(:first-of-type) {
+  border-top: none;
+}
+
+.results-page__entry-container {
+  margin: auto;
+  padding-left: 0;
+  width: 100%;
+}
+
+
+.results-page__entry-email {
+  display: inline-block;
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 55%;
+  white-space: nowrap;
+}
+
+.results-page__entry-author {
+  color: cadetblue;
+}
+
+.results-page__more-button {
+  display: block;
+  margin: 40px auto 40px;
+  width: 400px;
+}
+
+.results-page__back-to-top {
+  cursor: pointer;
+  margin-bottom: 60px;
+  text-align: right;
+}
+
+.results-page__back-to-top:hover {
+  color: brown;
+}
+
+.results-page__search-button {
+  position: absolute;
+  right: 0;
+  top: -30px;
+  width: 210px;
+}
+
+@media only screen and (max-width: 1305px) {
+  .results-page__entry > :last-child {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .results-page__entry-email {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .results-page__entry > * {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .results-page__entry > :first-child {
+    width: 100%;
+  }
+
+  .results-page__entry-email {
+    width: 65%;
+  }
+}

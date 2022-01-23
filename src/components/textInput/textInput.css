@@ -1,0 +1,42 @@
+.text-input {
+  border: 1px solid black;
+  display: block;
+  height: 50px;
+  width: 100%;
+  padding: 0.8rem;
+}
+
+.text-input__container {
+  margin-top: 20px;
+  position: relative;
+}
+
+.text-input:focus + .text-input__label{
+  background-color: white;
+  color: black;
+  display: block;
+  padding: 0 4px;
+  position: absolute;
+  left: 11px;
+  top: -8px;
+}
+
+.text-input:not(:focus) + .text-input__label {
+  color: black;
+}
+
+.text-input:focus {
+  outline: none;
+}
+
+.text-input::placeholder {
+  font-size: 16px;
+}
+
+.text-input:focus::placeholder {
+  color: white;
+}
+
+.text-input__label {
+  display: none;
+}
